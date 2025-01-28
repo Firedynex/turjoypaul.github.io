@@ -198,6 +198,7 @@ form input, form textarea {
     background-color: #F5ECD5;
     font-family: "Archivo Black", serif;
     font-style: normal;
+    width: 300px;
 }
 
 form input:focus, form textarea:focus {
@@ -215,4 +216,8 @@ form button {
 
 form button:hover {
     background-color: #2E5077;
+}
+
+form textarea {
+    height: 100px;
 }
