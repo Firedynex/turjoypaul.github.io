@@ -13,6 +13,7 @@ nav {
     padding-left: 50px;
     padding-right: 50px;
     justify-content: space-between;
+    border: solid black;
 }
 
 nav p, nav a {
@@ -24,6 +25,7 @@ nav p, nav a {
 }
 
 nav a {
+    color: white;
     text-decoration: none;
 }
 
@@ -40,9 +42,9 @@ footer {
     display: flex;
     justify-content: center;
     background-color: #133E87;
-    font-size: 25px;
     color: white;
     gap: 0.3em;
+    border: solid black;
 }
 
 footer a {
@@ -56,7 +58,10 @@ footer a:hover {
 
 /* Splash Section */
 .splash {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     color: black;
 }
@@ -78,10 +83,9 @@ footer a:hover {
     font-family: "Roboto Mono", serif;
     font-optical-sizing: auto;
     font-weight: 500;
-    
 }
 
-.contact-info {
+.address {
     font-size: 0.8em;
     color: #608BC1;
 }
@@ -139,7 +143,6 @@ ul {
 }
 
 dl {
-    list-style-type: square;
     display: grid;
     row-gap: 1em;
     grid-template-columns: repeat(2, 1fr);
@@ -183,7 +186,6 @@ dl dd{}
     justify-content: center;
     align-items: center;
     text-align: left;
-    margin-bottom: 22vh;
 }
 
 form {
@@ -199,6 +201,7 @@ form input, form textarea {
     font-family: "Archivo Black", serif;
     font-style: normal;
     width: 300px;
+    border: 3px solid black;
 }
 
 form input:focus, form textarea:focus {
@@ -206,12 +209,16 @@ form input:focus, form textarea:focus {
 }
 
 form button {
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
     background-color: #608BC1;
     color: white;
     border: none;
     border-radius: 20%;
     height: 40px;
     text-align: center;
+    margin-bottom: 16vh;
 }
 
 form button:hover {
@@ -220,4 +227,14 @@ form button:hover {
 
 form textarea {
     height: 100px;
+}
+
+.thankyou-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto Mono", serif;
+    font-size: 1.5em;
+    font-optical-sizing: auto;
+    font-weight: 500;
 }
